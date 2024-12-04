@@ -18,6 +18,7 @@ function search(){
     if(title.checked){
         document.getElementById('node_for_insert').innerHTML = '';
         getResponce1()}
+        
 }
 
 
