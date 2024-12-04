@@ -28,7 +28,7 @@ async function getResponse() {
     let content = await response.text()
     console.log(content)
     content = JSON.parse(content)
-    content = content.splice(0, 11)
+    content = content.splice(0, 12)
 
     console.log(content)
     let key
@@ -62,7 +62,7 @@ async function getResponse() {
 
 }
 async function getResponse1() {
-    let response = await fetch("shop.json")
+    let response = await fetch("products.json")
 
     let content = await response.text()
     console.log(content)
