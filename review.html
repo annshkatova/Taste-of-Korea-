@@ -11,6 +11,11 @@
             align-items: center;
             margin-top: 20px;
         }
+
+        .nav-link {
+            font-size: 17px;
+        } 
+        
         body {
             background-image:  url('background3.png');
             background-repeat: no-repeat;
@@ -34,12 +39,6 @@
             font-size: 20px;
         }
 
-        .input-wrapper {
-            position: relative;
-            /* Для позиционирования ошибок */
-            margin-bottom: 15px;
-            /* Отступ между полями */
-        }
 
         input[type="text"],
         textarea {
@@ -54,15 +53,6 @@
         textarea:focus {
             border-color: #80bdff;
             outline: none;
-        }
-
-        .error-message {
-            color: red;
-            font-size: 12px;
-            position: absolute;
-            top: 100;
-            left: 0;
-            margin-top: 5px;
         }
 
         form {
@@ -177,6 +167,9 @@
                     <a class="nav-link" href="catalog.html">Каталог</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="authorization.html">Авторизация</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link active" href="review.html">Оставить отзыв!</a>
                 </li>
             </ul>
@@ -187,7 +180,7 @@
 <h1>Оставьте отзыв!</h1> <br>
 <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
     <input name="q" type="hidden" value="search">
-    <div class="form-style errors">
+    <div class="form-style">
     <div>
        <label>Ваш отзыв</label> <br> 
         <textarea name="customer review" cols="30" rows="10"></textarea>
@@ -209,12 +202,11 @@
     <button type="submit">Отправить отзыв</button>
     </div>
 </form>
-<br>
 </div>
+<br>
 <footer class="footer">
     <h3>Taste of Korea</h3>
 </footer>
-
 </body>
 <script src="star.js"></script>
 </html>
