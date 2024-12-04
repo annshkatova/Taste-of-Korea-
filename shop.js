@@ -13,12 +13,12 @@ function sort(){
 function search(){
     if(price.checked){
         document.getElementById('node_for_insert').innerHTML = '';
-        getResponce()}
+        getResponse()}
 
     if(title.checked){
         document.getElementById('node_for_insert').innerHTML = '';
-        getResponce1()}
-        
+        getResponse1()}
+
 }
 
 
