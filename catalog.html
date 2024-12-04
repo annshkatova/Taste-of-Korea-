@@ -5,6 +5,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог</title>
     <style type="text/css">
+        iput .button {
+            color: greenyellow;
+        position: relative;    
+        }
         .footer {
         display: flex;
         height: 75px;
@@ -53,14 +57,14 @@
 <div class="container">
         <div class="card-body">
             <h5 class='card-title text-center'>Каталог</h5>
-            <input type="radio" id="price" name="sort" onchange="sort()">По цене </input>
-            <input type="radio" id="title" name="sort" checked onchange="sort()"> По названию </input>
+            <input type="radio" id="title" name="sort" checked onchange="sort()"> Сортировать по названию </input>
+            <input type="radio" id="price" name="sort" onchange="sort()"> Сортировать по цене </input>
             <input type="text" id="search" name="search" onchange="search()"> Поиск по каталогу </input>
             <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
                 <input name="q" type="hidden" value="search">
                 <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert">
                 </ul>
-                <input class="btn btn-primary" type="Submit" value="В корзину">
+                <input class="button" type="Submit" value="В корзину">
             </form>
         </div>
 </div>
