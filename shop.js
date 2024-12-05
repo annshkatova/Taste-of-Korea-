@@ -100,8 +100,8 @@ console.log(content_filter);
 
     for (key in content_filter) {
                 node_for_insert.innerHTML += `
-                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body">
-                <img style="width: 180px" class="align-self-center" src=${content_filter[key].img}>
+                <li style="width: 310px" class="d-flex flex-column m-1 p-1 border bg-body background-color: blue">
+                <img style="width: 180px; height: 100px" class="align-self-center" src=${content_filter[key].img}>
                 <h5 class="card-title">${content_filter[key].title}</h5>
                 <p class="card-text">${content_filter[key].description} <br> Цена ${content_filter[key].price} руб.</p>
                 <input type="hidden" name= "vendor_code" value=${content_filter[key].vendor_code}>
